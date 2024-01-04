@@ -1,0 +1,13 @@
+﻿@{
+    ViewData["Title"] = "Callback page";
+}
+
+<div class="text-center">
+    Callback called with code @(Context.Request.Query["code"]) and state @(Context.Request.Query["state"]).
+    
+</div>
+<div> Exchanged access code for idToken @ViewData["idToken"]</div>
+<br/>
+<div> Exchanged access code for access token @ViewData["accessToken"]</div>
+<br/>
+<div> Exchanged user token for api token @ViewData["apiToken"]</div>
