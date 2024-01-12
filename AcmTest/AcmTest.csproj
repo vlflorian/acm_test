@@ -7,8 +7,8 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <AdditionalFiles Include="Views\Authenticate\Index.cshtml" />
-      <AdditionalFiles Include="Views\Authenticate\Privacy.cshtml" />
+      <AdditionalFiles Include="Views\Callback\Index.cshtml" />
+      <AdditionalFiles Include="Views\Callback\Privacy.cshtml" />
     </ItemGroup>
 
     <ItemGroup>

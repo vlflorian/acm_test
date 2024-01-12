@@ -29,6 +29,14 @@ app.UseRouting();
 
 app.UseAuthorization();
 
+// e.g. https://localhost:4200/callback --> callback 
+var redirectUri = app.Configuration.GetValue<string>("AcmSettings:FrontendRedirectUri");
+var callbackPath = redirectUri.Split("/").Last(); 
+app.MapControllerRoute(
+    name: "callbackRoute",
+    pattern: callbackPath,
+    defaults: new { controller = "Callback", action = "Index" });
+
 app.MapControllerRoute(
     name: "default",
     pattern: "{controller=Home}/{action=Index}/{id?}");

@@ -10,7 +10,7 @@ using JsonSerializer = System.Text.Json.JsonSerializer;
 
 namespace AcmTest.Controllers;
 
-public class AuthenticateController(
+public class CallbackController(
     ILogger<HomeController> logger,
     IHttpContextAccessor httpContextAccessor,
     HttpClient httpClient,
@@ -28,7 +28,7 @@ public class AuthenticateController(
         Guard.Against.Null(httpContextAccessor);
         var codeVerifier = memoryCache.Get<string>("codeVerifier");
         var accessCode = httpContextAccessor?.HttpContext?.Request.Query["code"];
-        logger.LogInformation($"{nameof(AuthenticateController)}.{nameof(Index)} was called with code {accessCode}, codeVerifier {codeVerifier}");
+        logger.LogInformation($"{nameof(CallbackController)}.{nameof(Index)} was called with code {accessCode}, codeVerifier {codeVerifier}");
         Guard.Against.NullOrEmpty(accessCode);
         
         // https://authenticatie.vlaanderen.be/docs/beveiligen-van-toepassingen/integratie-methoden/oidc/technische-info/aanmelden/#tokens-opvragen-bij-het-token-endpoint
