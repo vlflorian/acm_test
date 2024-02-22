@@ -1,0 +1,20 @@
+### Unprotected endpoint
+GET http://localhost:5146/acmtest/unprotected
+Accept: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, `Response status was ${response.status} instead of 200. Response body was ${response.body}`);
+    });
+%}
+
+### Protected endpoint
+GET http://localhost:5146/acmtest/protected
+Authorization: Bearer xyz
+Accept: application/json
+
+> {%
+    client.test("Request executed successfully", function () {
+        client.assert(response.status === 200, `Response status was ${response.status} instead of 200. Response body was ${response.body}`);
+    });
+%}

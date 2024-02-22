@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution items", "Solution 
 		README.md = README.md
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProtectedApiTest", "ProtectedApiTest\ProtectedApiTest.csproj", "{6175EE15-C4AA-474B-BDEB-7F106153DB3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -17,5 +19,9 @@ Global
 		{711FC371-233D-4FC9-B49A-9A8BEBF07B76}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{711FC371-233D-4FC9-B49A-9A8BEBF07B76}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{711FC371-233D-4FC9-B49A-9A8BEBF07B76}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6175EE15-C4AA-474B-BDEB-7F106153DB3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6175EE15-C4AA-474B-BDEB-7F106153DB3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6175EE15-C4AA-474B-BDEB-7F106153DB3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6175EE15-C4AA-474B-BDEB-7F106153DB3D}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
