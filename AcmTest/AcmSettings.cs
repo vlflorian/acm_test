@@ -9,4 +9,14 @@ public class AcmSettings
     public string FrontendRedirectUri { get; set; }
     public string FrontendScopes { get; set; }
     public string ApiClientId { get; set; }
+
+    public ClientCredentialsSettings ClientCredentialsSettings { get; set; }
+}
+
+public class ClientCredentialsSettings
+{
+    public string ClientId { get; set; }
+    public string ClientSecret { get; set; }
+    public string Scopes { get; set; }
+    public string Audience { get; set; }
 }
